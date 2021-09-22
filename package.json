@@ -1,0 +1,32 @@
+{
+    "name": "",
+    "version": "1.0.0",
+    "description": "Simple react form library",
+    "main": "./lib/cjs/index.js",
+    "module": "./lib/esm/index.js",
+    "types": "./lib/esm/index.d.ts",
+    "author": "nikolai369",
+    "license": "MIT",
+    "private": true,
+    "files": [
+        "/lib"
+    ],
+    "scripts": {
+        "build": "yarn build:esm && yarn build:cjs",
+        "build:esm": "tsc",
+        "build:cjs": "tsc --module commonjs --outDir lib/cjs"
+    },
+    "peerDependencies": {
+        "react": "^16.8.0",
+        "react-dom": "^16.8.0"
+    },
+    "devDependencies": {
+        "@types/react": "^17.0.24",
+        "@types/react-dom": "^17.0.9",
+        "eslint": "^7.32.0",
+        "prettier": "^2.4.1",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "typescript": "^4.4.3"
+    }
+}
